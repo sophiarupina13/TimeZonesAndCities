@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".MainActivity5">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/marginLeft"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="34dp"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/marginRight"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="34dp"/>
+
+
+    <ImageView
+        android:id="@+id/clock"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:srcCompat="@drawable/clock"
+        android:adjustViewBounds="true"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <ImageView
+        android:id="@+id/time"
+        android:layout_width="150dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <Button
+        android:id="@+id/button_ok"
+        android:layout_width="340dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="55dp"
+        android:background="@drawable/buttons_gradient"
+        android:text="@string/ok"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/marginRight"
+        app:layout_constraintStart_toStartOf="@id/marginLeft" />
+
+    <EditText
+        android:id="@+id/answer"
+        android:layout_width="340dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toTopOf="@id/button_ok"
+        app:layout_constraintEnd_toEndOf="@id/marginRight"
+        app:layout_constraintStart_toStartOf="@id/marginLeft"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/button_ok"
+        android:hint="@string/answer"
+        android:gravity="center"
+        android:textColorHint="@color/gray"
+        android:textStyle="bold"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Time zones and cities</string>
+    <string name="header1">MATCH THE TIME ZONE WITH THE CITY</string>
+    <string name="header2">Choose casual or fast mode</string>
+    <string name="play">PLAY</string>
+    <string name="casual">CASUAL</string>
+    <string name="fast">FAST</string>
+    <string name="title_activity_main2">MainActivity2</string>
+    <string name="time">00:10</string>
+    <string name="city1">TOKIO</string>
+    <string name="city2">LOS ANGELES</string>
+    <string name="city3">MOSCOW</string>
+    <string name="city4">NEW YORK</string>
+    <string name="city5">HONG KONG</string>
+    <string name="city6">LONDON</string>
+    <string name="ok">OK</string>
+    <string name="answer">YOUR ANSWER</string>
+    <string name="first_fragment_label">First fragment</string>
+    <string name="second_fragment_label">Second fragment</string>
+    <string name="replay">REPLAY</string>
+</resources>
